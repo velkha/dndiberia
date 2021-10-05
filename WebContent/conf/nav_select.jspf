@@ -1,0 +1,5 @@
+<%
+	//UserContext check = (session.getAttribute("userContext") instanceof UserContext) ?  (UserContext)session.getAttribute("userContext"): null;
+
+
+%>

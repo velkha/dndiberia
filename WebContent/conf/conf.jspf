@@ -1,0 +1,11 @@
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<!-- MAIN CSS -->
+<link rel="StyleSheet" href="<%=request.getContextPath()%>/css/maincss.css" type="text/css">
+
+<!-- main js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="<%=request.getContextPath()%>/js/mainjs.js"></script>

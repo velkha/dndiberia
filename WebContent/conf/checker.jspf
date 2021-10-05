@@ -1,0 +1,38 @@
+<%@page import="org.dndiberia.controladores.AccessController"%>
+<%@page import="org.dndiberia.models.UserContext"%>
+<%@page import="org.dndiberia.ddbb.SecureDDBB"%>
+<%
+	/*
+	request.getContextPath(); /context
+	request.getRequestURI(); /context/file.jsp
+	request.getRequestURL().toString(); http://ip:port/context/file.jsp
+	*/
+	UserContext userContext;
+	userContext = (session.getAttribute("userContext") instanceof UserContext) ?  (UserContext)session.getAttribute("userContext"): null;
+	AccessController accessController = new AccessController();
+	if (userContext == null){
+		
+		response.sendRedirect("views/genericas/noregistrado.jsp");	
+	}
+	else{
+		
+		int check = accessController.checkAuthoriced(userContext);
+		switch(check){
+		
+			case 1:
+				response.sendRedirect("views/genericas/noautorizado.jsp");	
+				break;
+			case 2:
+				response.sendRedirect("views/genericas/usuariodeshabilitado.jsp");	
+				break;
+			case 3:
+				response.sendRedirect("views/genericas/nodisponible.jsp");	
+				break;
+			case 4:
+				response.sendRedirect("views/genericas/noencontrado.jsp");	
+				break;
+			case 0:
+			default:
+		}
+	}
+%>

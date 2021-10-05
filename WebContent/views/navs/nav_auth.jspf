@@ -1,0 +1,29 @@
+<div class=".row">
+	<div id="navIconSpace">
+		<img src="<%=request.getContextPath()%>/assets/mainAssets/placeholder.png" alt="Logo dndiberia" loading="eager" />
+	</div>
+	<div id="navLinkBar"> 
+		<div class="navComponent"><a href="#">Home</a></div>
+		<div class="navComponent"><a href="#">Historias</a></div>
+		<div class="navComponent"><a href="#">Monstruos</a></div>
+		<div class="navComponent"><a href="#">Personajes</a></div>
+		<div class="navComponent"><a href="#">Hechizos</a></div>
+		<div class="navComponent"><a href="#">Objetos</a></div>
+		<div class="navComponent"><a href="#">Dotes</a></div>
+		<div class="navComponent"><a href="#">Mundos</a></div>
+		<div class="navComponent"><a href="#">Patreon</a></div>
+		<div class="navComponent"><a href="#">Tutorial</a></div>
+	</div>
+	<div id="navUserBar">
+		<div id="navUserIcon">
+			<img src="<%=request.getContextPath()%>/assets/mainAssets/placeholder.png" alt="User Image" loading="eager" />
+		</div>
+
+		<div id="navProfile">
+			<a href="#">Perfil</a>
+		</div>
+		<div id="navLogOut">
+			<a href="#">LogOut</a>
+		</div>
+	</div>
+</div>

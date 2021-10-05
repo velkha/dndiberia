@@ -1,0 +1,138 @@
+/*
+	estilos hojas de personajes
+*/
+section .row:first-child{
+	padding-top: calc(var(--nav-height)/3);
+	padding-bottom: var(--footer-height/3);
+}
+/*
+	Complex character sheets
+*/
+.papire{
+	/*-webkit-filter: blur(20px);
+	-moz-filter: blur(20px);
+	-o-filter: blur(20px);
+	-ms-filter: blur(20px);
+	filter: blur(20px);*/
+	position: absolute;
+	width: 100%;
+	height: 97%;
+	padding-top: calc(var(--nav-height)+(var(--nav-height)/3));
+	padding-bottom: calc(var(--footer-height)+(var(--footer-height)/3));
+	left: 0%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100%;
+	box-sizing: border-box;
+	-webkit-box-shadow: 4px 7px 15px 14px #000000; 
+box-shadow: 4px 7px 15px 14px #000000;
+}
+.charData {
+	display: flex;  
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	min-height: 90%;
+	margin: 2% 3% 5% 3%;
+}
+
+.charData > * {
+  padding: 10px;
+  flex: 1 20%;
+}
+.charData * h1 {
+	font-size: 1.5em;
+	font-family: 'MedievalSharp', cursive;
+
+}
+
+.charData #charName{
+	flex: 1 100%;
+	padding-bottom: 5%;
+}
+.charData #charName h1{
+	font-size: 2em;
+}
+
+.charData #imagenMonstruo, .charData #charDescription{
+	flex: 1 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-bottom: 15%;
+	
+}
+.charData #imagenMonstruo {
+	max-height: 900px;
+	max-width: 900px;
+}
+
+.charData #imagenMonstruo img {
+	width: 100%;
+	display: block;
+	background-color: black;
+	border-radius: 93% 7% 94% 6% / 4% 92% 8% 96% ;
+	border-width:3px;
+	border-style:solid;
+	border-color:  rgba(113, 100, 86, .9);
+}
+.charData #charSpells, .charData #charTraits{
+	flex: 1 100%;
+	padding-top: 10%;
+}
+/*
+	Simple character sheets
+*/
+
+.simpleDetails {
+	display: flex;  
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+	align-content: center;
+	font-family: 'MedievalSharp', cursive;
+
+}
+.simpleDetails * {
+	padding: 10px;
+	flex: 1 25%;
+	font-family: 'MedievalSharp', cursive;
+	
+}
+.simpleDetails * * {
+	border: none;
+}
+.simpleDetails * h1 {
+	font-size: 1em;
+}
+.simpleDetails * p {
+	padding-top: 5px;
+	font-size: 0.7em;
+}
+.simpleDetails #nombre {
+	flex: 1 100%;
+	border-top: solid 2px var(--accent-color-1);
+	border-bottom: solid 2px var(--accent-color-1);
+}
+.simpleDetails #nombre h1{
+	font-size: 1.5em;
+}
+.simpleDetails #descripcion {
+	flex: 1 100%;
+}
+.simpleDetails #marco {
+	flex: 1 100%;
+}
+.simpleDetails #danio {
+	flex: 1 100%;
+	display: flex;  
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+}
+.simpleDetails #descripcion_superior {
+	flex: 1 100%;
+}

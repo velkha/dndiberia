@@ -1,0 +1,84 @@
+
+/* 
+ 	Galerias genericas
+*/
+#gallery {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#gallery .monsterGalleryItem {
+	flex: 1 0 45%; 
+  margin: 2.5%;
+  height: 20em;
+  background-color: var(--main-unuse-bg-color);
+  background-image: url("/dndiberia/assets/mainAssets/textura_papiro.jpg");
+  background-size: cover;
+  box-shadow: 4px 0px 19px 4px #000000;
+  transition: box-shadow 0.3s;
+  display: block;
+  color: black;
+}
+#gallery .monsterGalleryItem:hover {
+	box-shadow: 4px 0px 19px 8px #000000;
+	transition: box-shadow 0.3s;
+	bottom: 3px;
+}
+#gallery .monsterGalleryItem *{
+	font-family: 'MedievalSharp', cursive;
+}
+/* monster gallery */
+.monsterGalleryItem .nombre {
+	width: 100%;
+	height: 10%;
+	padding-top: 2%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.monsterGalleryItem .nombre p{
+	flex-grow: 1;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.monsterGalleryItem .descripcion {
+	float: left;
+	width: 60%;
+	height: 80%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+.monsterGalleryItem .descripcion p {
+	margin: 2% 5% 2% 8.5%;
+	display: -webkit-box;
+	max-width: 100%;
+	-webkit-line-clamp: 12;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.monsterGalleryItem .marco{
+	float: right;
+	width: 38%;
+	height: 83%;
+	top: 1%;
+	right: 2%;
+	padding-left: 1%;
+	padding-bottom: 4%;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+#gallery .monsterGalleryItem .marco img{
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 0% 100% 3% 97% / 95% 2% 98% 5% ;
+}
+
+
